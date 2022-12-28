@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D212C09295CD8960060B51D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C08295CD8960060B51D /* AppDelegate.swift */; };
+		6D212C0B295CD8960060B51D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C0A295CD8960060B51D /* SceneDelegate.swift */; };
+		6D212C0D295CD8960060B51D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C0C295CD8960060B51D /* ViewController.swift */; };
+		6D212C10295CD8960060B51D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D212C0E295CD8960060B51D /* Main.storyboard */; };
+		6D212C12295CD89A0060B51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D212C11295CD89A0060B51D /* Assets.xcassets */; };
+		6D212C15295CD89A0060B51D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D212C13295CD89A0060B51D /* LaunchScreen.storyboard */; };
+		6D212C1D295CD8B20060B51D /* AlamofireAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C1C295CD8B20060B51D /* AlamofireAPIClient.swift */; };
+		6D212C1F295CD8BE0060B51D /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C1E295CD8BE0060B51D /* URLSessionAPIClient.swift */; };
+		6D212C21295CD8E90060B51D /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C20295CD8E90060B51D /* UserResponseModel.swift */; };
+		6D212C23295CE1AA0060B51D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C22295CE1AA0060B51D /* AppError.swift */; };
+		A9CA1B73C7398F3506FE640A /* Pods_ssl_pinning_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C3B0F4A1B27DF595D2F62B /* Pods_ssl_pinning_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41C3B0F4A1B27DF595D2F62B /* Pods_ssl_pinning_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ssl_pinning_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D212C05295CD8960060B51D /* ssl-pinning-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ssl-pinning-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D212C08295CD8960060B51D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D212C0A295CD8960060B51D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D212C0C295CD8960060B51D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D212C0F295CD8960060B51D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D212C11295CD89A0060B51D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D212C14295CD89A0060B51D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D212C16295CD89A0060B51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D212C1C295CD8B20060B51D /* AlamofireAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPIClient.swift; sourceTree = "<group>"; };
+		6D212C1E295CD8BE0060B51D /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
+		6D212C20295CD8E90060B51D /* UserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseModel.swift; sourceTree = "<group>"; };
+		6D212C22295CE1AA0060B51D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		F18B54DB794A3B66954F0A74 /* Pods-ssl-pinning-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssl-pinning-demo.debug.xcconfig"; path = "Target Support Files/Pods-ssl-pinning-demo/Pods-ssl-pinning-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		F768169198681D72CBCB6268 /* Pods-ssl-pinning-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssl-pinning-demo.release.xcconfig"; path = "Target Support Files/Pods-ssl-pinning-demo/Pods-ssl-pinning-demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D212C02295CD8960060B51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CA1B73C7398F3506FE640A /* Pods_ssl_pinning_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59348C8B18EA4FE5A2ECB82D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F18B54DB794A3B66954F0A74 /* Pods-ssl-pinning-demo.debug.xcconfig */,
+				F768169198681D72CBCB6268 /* Pods-ssl-pinning-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6322E7ED8928147E4794CB14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41C3B0F4A1B27DF595D2F62B /* Pods_ssl_pinning_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D212BFC295CD8960060B51D = {
+			isa = PBXGroup;
+			children = (
+				6D212C07295CD8960060B51D /* ssl-pinning-demo */,
+				6D212C06295CD8960060B51D /* Products */,
+				59348C8B18EA4FE5A2ECB82D /* Pods */,
+				6322E7ED8928147E4794CB14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D212C06295CD8960060B51D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D212C05295CD8960060B51D /* ssl-pinning-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D212C07295CD8960060B51D /* ssl-pinning-demo */ = {
+			isa = PBXGroup;
+			children = (
+				6D212C08295CD8960060B51D /* AppDelegate.swift */,
+				6D212C0A295CD8960060B51D /* SceneDelegate.swift */,
+				6D212C0C295CD8960060B51D /* ViewController.swift */,
+				6D212C0E295CD8960060B51D /* Main.storyboard */,
+				6D212C11295CD89A0060B51D /* Assets.xcassets */,
+				6D212C13295CD89A0060B51D /* LaunchScreen.storyboard */,
+				6D212C16295CD89A0060B51D /* Info.plist */,
+				6D212C1C295CD8B20060B51D /* AlamofireAPIClient.swift */,
+				6D212C1E295CD8BE0060B51D /* URLSessionAPIClient.swift */,
+				6D212C20295CD8E90060B51D /* UserResponseModel.swift */,
+				6D212C22295CE1AA0060B51D /* AppError.swift */,
+			);
+			path = "ssl-pinning-demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D212C04295CD8960060B51D /* ssl-pinning-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D212C19295CD89A0060B51D /* Build configuration list for PBXNativeTarget "ssl-pinning-demo" */;
+			buildPhases = (
+				37C53F5C7105D0B856122F9D /* [CP] Check Pods Manifest.lock */,
+				6D212C01295CD8960060B51D /* Sources */,
+				6D212C02295CD8960060B51D /* Frameworks */,
+				6D212C03295CD8960060B51D /* Resources */,
+				D41FE3F3A5BAB349014957F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ssl-pinning-demo";
+			productName = "ssl-pinning-demo";
+			productReference = 6D212C05295CD8960060B51D /* ssl-pinning-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D212BFD295CD8960060B51D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					6D212C04295CD8960060B51D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D212C00295CD8960060B51D /* Build configuration list for PBXProject "ssl-pinning-demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D212BFC295CD8960060B51D;
+			productRefGroup = 6D212C06295CD8960060B51D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D212C04295CD8960060B51D /* ssl-pinning-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D212C03295CD8960060B51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D212C15295CD89A0060B51D /* LaunchScreen.storyboard in Resources */,
+				6D212C12295CD89A0060B51D /* Assets.xcassets in Resources */,
+				6D212C10295CD8960060B51D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37C53F5C7105D0B856122F9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ssl-pinning-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D41FE3F3A5BAB349014957F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ssl-pinning-demo/Pods-ssl-pinning-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ssl-pinning-demo/Pods-ssl-pinning-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ssl-pinning-demo/Pods-ssl-pinning-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D212C01295CD8960060B51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D212C1F295CD8BE0060B51D /* URLSessionAPIClient.swift in Sources */,
+				6D212C1D295CD8B20060B51D /* AlamofireAPIClient.swift in Sources */,
+				6D212C0D295CD8960060B51D /* ViewController.swift in Sources */,
+				6D212C21295CD8E90060B51D /* UserResponseModel.swift in Sources */,
+				6D212C09295CD8960060B51D /* AppDelegate.swift in Sources */,
+				6D212C0B295CD8960060B51D /* SceneDelegate.swift in Sources */,
+				6D212C23295CE1AA0060B51D /* AppError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D212C0E295CD8960060B51D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D212C0F295CD8960060B51D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D212C13295CD89A0060B51D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D212C14295CD89A0060B51D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D212C17295CD89A0060B51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D212C18295CD89A0060B51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D212C1A295CD89A0060B51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F18B54DB794A3B66954F0A74 /* Pods-ssl-pinning-demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4FF9D6BAFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssl-pinning-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.greensyntax.salgiraah.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Salgirah Dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D212C1B295CD89A0060B51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F768169198681D72CBCB6268 /* Pods-ssl-pinning-demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4FF9D6BAFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssl-pinning-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.greensyntax.salgiraah.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Salgirah Dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D212C00295CD8960060B51D /* Build configuration list for PBXProject "ssl-pinning-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D212C17295CD89A0060B51D /* Debug */,
+				6D212C18295CD89A0060B51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D212C19295CD89A0060B51D /* Build configuration list for PBXNativeTarget "ssl-pinning-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D212C1A295CD89A0060B51D /* Debug */,
+				6D212C1B295CD89A0060B51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D212BFD295CD8960060B51D /* Project object */;
+}
