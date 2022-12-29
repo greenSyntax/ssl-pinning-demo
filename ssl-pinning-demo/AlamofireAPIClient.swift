@@ -58,7 +58,7 @@ class AlmofireAPIClient: APIClient {
                 } else {
                     if let err = response.error {
                         onCompletion(.failure(AppError.unknown(err.localizedDescription)))
-                    } else if response.error?.isServerTrustEvaluationError {
+                    } else if response.error?.isServerTrustEvaluationError ?? false {
                         
                     } else {
                         onCompletion(.failure(AppError.noData))

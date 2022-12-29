@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     
     //TODO: Change as per your convience
     private lazy var apiClient: APIClient = {
-        return AlmofireAPIClient(sslPinningEnabled: false)
-//        return URLSessionAPIClient()
+//        return AlmofireAPIClient(sslPinningEnabled: false)
+        return URLSessionAPIClient()
         
     }()
     
