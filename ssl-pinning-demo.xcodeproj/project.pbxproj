@@ -17,6 +17,7 @@
 		6D212C1F295CD8BE0060B51D /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C1E295CD8BE0060B51D /* URLSessionAPIClient.swift */; };
 		6D212C21295CD8E90060B51D /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C20295CD8E90060B51D /* UserResponseModel.swift */; };
 		6D212C23295CE1AA0060B51D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D212C22295CE1AA0060B51D /* AppError.swift */; };
+		6D212C29295DCFE10060B51D /* run.mocky.io.cer in Resources */ = {isa = PBXBuildFile; fileRef = 6D212C28295DCFE10060B51D /* run.mocky.io.cer */; };
 		A9CA1B73C7398F3506FE640A /* Pods_ssl_pinning_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C3B0F4A1B27DF595D2F62B /* Pods_ssl_pinning_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		6D212C1E295CD8BE0060B51D /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
 		6D212C20295CD8E90060B51D /* UserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseModel.swift; sourceTree = "<group>"; };
 		6D212C22295CE1AA0060B51D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		6D212C28295DCFE10060B51D /* run.mocky.io.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = run.mocky.io.cer; sourceTree = "<group>"; };
 		F18B54DB794A3B66954F0A74 /* Pods-ssl-pinning-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssl-pinning-demo.debug.xcconfig"; path = "Target Support Files/Pods-ssl-pinning-demo/Pods-ssl-pinning-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F768169198681D72CBCB6268 /* Pods-ssl-pinning-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssl-pinning-demo.release.xcconfig"; path = "Target Support Files/Pods-ssl-pinning-demo/Pods-ssl-pinning-demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 		6D212C07295CD8960060B51D /* ssl-pinning-demo */ = {
 			isa = PBXGroup;
 			children = (
+				6D212C28295DCFE10060B51D /* run.mocky.io.cer */,
 				6D212C08295CD8960060B51D /* AppDelegate.swift */,
 				6D212C0A295CD8960060B51D /* SceneDelegate.swift */,
 				6D212C0C295CD8960060B51D /* ViewController.swift */,
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D212C29295DCFE10060B51D /* run.mocky.io.cer in Resources */,
 				6D212C15295CD89A0060B51D /* LaunchScreen.storyboard in Resources */,
 				6D212C12295CD89A0060B51D /* Assets.xcassets in Resources */,
 				6D212C10295CD8960060B51D /* Main.storyboard in Resources */,
@@ -377,6 +381,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4FF9D6BAFN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ssl-pinning-demo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SSL Pinning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -410,6 +415,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4FF9D6BAFN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ssl-pinning-demo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SSL Pinning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -8,12 +8,12 @@
 import Foundation
 
 protocol APIClient {
-    func dataRequest(_ url: URL, onCompletion: @escaping (_ result: Result<UserResponseModel, Error>) -> Void)
+    func dataRequest(_ url: URL, onCompletion: @escaping (_ result: Result<PostUserModel, Error>) -> Void)
 }
 
 class URLSessionAPIClient: APIClient {
     
-    func dataRequest(_ url: URL, onCompletion: @escaping (_ result: Result<UserResponseModel, Error>) -> Void) {
+    func dataRequest(_ url: URL, onCompletion: @escaping (_ result: Result<PostUserModel, Error>) -> Void) {
         
         guard let request = try? URLRequest(url: url, method: .get) else {
             onCompletion(.failure(AppError.noData))
@@ -22,12 +22,12 @@ class URLSessionAPIClient: APIClient {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let err = error {
-                onCompletion(.failure(AppError.noData))
+                onCompletion(.failure(AppError.unknown(err.localizedDescription)))
                 return
             }
             
             DispatchQueue.main.async {
-                if let decodedData = try? JSONDecoder().decode(UserResponseModel.self, from: data!) {
+                if let decodedData = try? JSONDecoder().decode(PostUserModel.self, from: data!) {
                     onCompletion(.success(decodedData))
                 } else {
                     onCompletion(.failure(AppError.decodingError))

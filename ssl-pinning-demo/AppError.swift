@@ -10,4 +10,5 @@ import Foundation
 enum AppError: Error {
     case noData
     case decodingError
+    case unknown(String)
 }

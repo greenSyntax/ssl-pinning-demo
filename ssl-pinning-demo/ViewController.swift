@@ -9,12 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private let GET_API = URL(string: "https://reqres.in/api/users/2")!
+    private let GET_API = URL(string: "https://run.mocky.io/v3/77e82362-7222-46fa-a6ab-c2203c9df461")!
     
     //TODO: Change as per your convience
     private lazy var apiClient: APIClient = {
-        //return AlmofireAPIClient()
-        return URLSessionAPIClient()
+        return AlmofireAPIClient(sslPinningEnabled: false)
+//        return URLSessionAPIClient()
         
     }()
     
